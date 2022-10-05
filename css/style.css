@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Bebas Neue Cyrillic';
+    src: local('Bebas Neue Cyrillic'), local('BebasNeueCyrillic'),
+        url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+        url('../fonts/BebasNeueRegular.woff') format('woff');
+    font-display: swap;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -57,4 +65,31 @@ body {
     line-height: 20px;
     text-decoration: none;
     color: white;
+}
+
+.main {
+    max-width: 1280px;
+    margin: auto;
+    padding-top: 54px;
+    display: flex;
+}
+
+.main-info {}
+
+.home-image path {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.home-image path:hover {
+    opacity: 1;
+}
+
+.counter-button {
+    background-color: #fff;
+}
+
+.main-title {
+    font-weight: normal;
+    font-style: normal;
 }
